@@ -10,10 +10,15 @@ public class AgregarPedido implements Command{
         this.producto = producto;
     }
 
+    public void setProducto(Producto producto) {
+        this.producto = producto;
+    }
+
     @Override
     public void execute() {
         Carrito carrito = Carrito.singleton(); //Llama para que se instancie la clase al agregar un pedido
         carrito.agregarProducto(producto);
         System.out.println("Producto '" + producto.getNombre() + "' agregado al carrito.");
+        System.out.println("============================================");
     }
 }

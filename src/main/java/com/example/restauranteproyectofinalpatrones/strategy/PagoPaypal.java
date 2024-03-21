@@ -8,6 +8,6 @@ public class PagoPaypal implements MetodoPago{
     public void procesarPago(double total) {
 
         System.out.println("Pagando $" + total + " con PayPal.");
-
+        System.out.println("============================================");
     }
 }

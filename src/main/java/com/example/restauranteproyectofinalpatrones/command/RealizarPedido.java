@@ -17,7 +17,7 @@ public class RealizarPedido implements Command{
         Carrito carrito = Carrito.singleton(); //si ya está instanciada devuelve este para que se modifique sobre esta
         carrito.realizarPedido();
         metodoPago.procesarPago(carrito.getTotal());
-        System.out.println("Pedido exitoso.");
+
     }
 
 }

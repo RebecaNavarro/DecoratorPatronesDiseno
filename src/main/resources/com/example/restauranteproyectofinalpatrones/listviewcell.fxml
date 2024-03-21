@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="productoPane" maxHeight="150.0" maxWidth="500.0" minHeight="137.0" minWidth="525.0" prefHeight="200.0" prefWidth="500.0"
+      style="-fx-padding: 15; -fx-spacing: 15;"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.example.restauranteproyectofinalpatrones.controller.ListViewCell">
+
+
+    <children>
+        <Label text="Producto:">
+            <font>
+                <Font name="Comic Sans MS Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="producto" prefHeight="20.0" prefWidth="373.0">
+            <font>
+                <Font name="Times New Roman" size="17.0" />
+            </font>
+        </Label>
+        <Label text="Precio:">
+            <font>
+                <Font name="Comic Sans MS Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="precio" prefHeight="20.0" prefWidth="43.0" alignment="CENTER_RIGHT">
+            <font>
+                <Font name="Times New Roman" size="14.0" />
+            </font>
+        </Label>
+        <Label text="Bs.">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="anadirlista" mnemonicParsing="false" prefHeight="44.0" prefWidth="69.0" text="Añadir" padding="10"
+        onAction="#anadir"/>
+        <Button fx:id="eliminarlsta" mnemonicParsing="false" prefHeight="44.0" prefWidth="69.0" text="Eliminar" padding="10"
+        onAction="#eliminar"/>
+    </children>
+</VBox>

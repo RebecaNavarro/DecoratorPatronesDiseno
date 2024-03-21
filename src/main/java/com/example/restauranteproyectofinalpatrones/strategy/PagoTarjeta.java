@@ -8,6 +8,6 @@ public class PagoTarjeta implements MetodoPago{
     public void procesarPago(double total){
 
         System.out.println("Pagando $" + total + " con tarjeta de crédito.");
-
+        System.out.println("============================================");
     }
 }

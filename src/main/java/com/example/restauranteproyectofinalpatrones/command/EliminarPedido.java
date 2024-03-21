@@ -14,6 +14,6 @@ public class EliminarPedido implements Command{
     public void execute() {
         Carrito carrito = Carrito.singleton(); //si ya está instanciada devuelve este para que se modifique sobre esta
         carrito.eliminarProducto(producto);
-        System.out.println("Producto '" + producto.getNombre() + "' eliminado del carrito.");
+        System.out.println("============================================");
     }
 }
