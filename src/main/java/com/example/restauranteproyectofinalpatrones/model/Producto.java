@@ -9,8 +9,6 @@ public class Producto {
         this.nombre = nombre;
         this.precio = precio;
     }
-
-    //para que otras clases lo utilicen
     public double getPrecio() {
         return precio;
     }

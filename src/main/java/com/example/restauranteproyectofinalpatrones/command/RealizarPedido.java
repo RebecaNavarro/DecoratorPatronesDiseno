@@ -14,7 +14,7 @@ public class RealizarPedido implements Command{
 
     @Override
     public void execute() {
-        Carrito carrito = Carrito.singleton(); //si ya está instanciada devuelve este para que se modifique sobre esta
+        Carrito carrito = Carrito.singleton();
         carrito.realizarPedido();
         metodoPago.procesarPago(carrito.getTotal());
 

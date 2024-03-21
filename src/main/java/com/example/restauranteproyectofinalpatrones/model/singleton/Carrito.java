@@ -25,12 +25,10 @@ public class Carrito {
         return total;
     }
 
-    // Método para agregar y eliminar un producto al carrito
     public void agregarProducto(Producto producto) {
         productos.add(producto);
     }
     public void eliminarProducto(Producto producto) {
-//        productos.remove(producto);
         if(productos.contains(producto)) {
             System.out.println("Producto '" + producto.getNombre() + "' eliminado del carrito.");
             productos.remove(producto);
@@ -41,7 +39,7 @@ public class Carrito {
     public void vaciarCarrito() { productos.clear(); }
 
     public double totalCompras() {
-        for (Producto producto : productos) { //es un foreach  para sumar cada producto de la lista
+        for (Producto producto : productos) {
             total += producto.getPrecio();
         }
         return total;
@@ -50,12 +48,12 @@ public class Carrito {
     public void realizarPedido(){
         if (productos.isEmpty()) {
             System.out.println("No hay nada que comprar.");
-            return; //no devuelve nada
+            return;
         } else {
             System.out.println("Procesando pedido");
 
             System.out.println("Detalles del pedido:");
-            for (Producto producto : productos) {//foreach para mostrar cada producto del carrito al realizar la compra
+            for (Producto producto : productos) {
                 System.out.println("- " + producto.getNombre() + ": $" + producto.getPrecio());
             }
 

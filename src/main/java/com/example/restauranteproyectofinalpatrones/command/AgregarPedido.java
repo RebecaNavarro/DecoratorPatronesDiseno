@@ -16,7 +16,7 @@ public class AgregarPedido implements Command{
 
     @Override
     public void execute() {
-        Carrito carrito = Carrito.singleton(); //Llama para que se instancie la clase al agregar un pedido
+        Carrito carrito = Carrito.singleton();
         carrito.agregarProducto(producto);
         System.out.println("Producto '" + producto.getNombre() + "' agregado al carrito.");
         System.out.println("============================================");
